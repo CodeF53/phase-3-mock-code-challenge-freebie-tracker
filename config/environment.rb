@@ -1,6 +1,7 @@
 ENV["RACK_ENV"] ||= "development"
 
 require 'bundler/setup'
+require 'faker'
 Bundler.require(:default, ENV["RACK_ENV"])
 
 # Without this code, ActiveRecord thinks the singular of "Freebies" is "Freeby"

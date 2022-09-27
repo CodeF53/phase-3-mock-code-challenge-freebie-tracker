@@ -16,6 +16,11 @@ gem "rake"
 # https://github.com/sparklemotion/sqlite3-ruby
 gem "sqlite3", "~> 1.4"
 
+gem "faker"
+
+gem 'solargraph', group: :development
+
+
 # Require all files in a folder
 # https://github.com/jarmo/require_all
 gem "require_all"

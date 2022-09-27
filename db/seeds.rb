@@ -17,5 +17,11 @@ puts "Creating freebies..."
 # * and a freebie belongs to a company.                         *
 # ***************************************************************
 # Create freebies Here
-
+10.times do
+  Company.all[rand(Company.all.length)].give_freebie(
+    Dev.all[rand(Dev.all.length)],
+    Faker::Coffee.blend_name,
+    rand(50)
+  )
+end
 puts "Seeding done!"
